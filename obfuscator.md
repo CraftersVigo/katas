@@ -12,11 +12,11 @@ Estos son los comandos: Rotar (R) y Transponer (T)
 
 Rotar mueve las letras del texto hacia la derecha tantos caracteres como se indique. Los caracteres del final se añaden al principio. Por ejemplo:
 
-| comando | texto | ofuscado |
-|---------|-------|----------|
-| R1 | password | dpasswor |
-| R2 | password | rdpasswo |
-| R4 | password | wordpass |
+| comando | texto    | ofuscado |
+|---------|----------|----------|
+| R1      | password | dpasswor |
+| R2      | password | rdpasswo |
+| R4      | password | wordpass |
 
 
 ### Transponer
@@ -25,17 +25,17 @@ Transponer cambia las letras del texto por otras del abecedario que estén a la 
 
 | comando | texto | ofuscado |
 |---------|-------|----------|
-| T1 | a | b |
-| T2 | a | c |
-| T3 | a | d |
+| T1      | a     | b        |
+| T2      | a     | c        |
+| T3      | a     | d        |
 
 Si alcanzamos el final del abecedario se empieza de nuevo:
 
 | comando | texto | ofuscado |
 |---------|-------|----------|
-| T1 | z | a |
-| T2 | y | a |
-| T4 | y | c |
+| T1      | z     | a        |
+| T2      | y     | a        |
+| T4      | y     | c        |
 
 Si las letras están en mayúsculas, se transponen en mayúscula. Los signos de puntuación y espacios se dejan como están.
 
@@ -49,10 +49,10 @@ a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z
 
 Las recetas son combinaciones de comandos. Por ejemplo:
 
-| Receta | Original | Ofuscado |
-|--------|----------|----------|
-| T1R1 | ab | cb |
-| T1:R2:T1 | abc | dec |
+| Receta.  | Original | Ofuscado |
+|----------|----------|----------|
+| T1:R1    | ab       | cb       |
+| T1:R2:T3 | abc      | fge      |
 
 ## El desafío
 
@@ -72,15 +72,15 @@ Bahev ranwjk. Jko raiko aj hw lqhlkYkj.
 
 ### Pistas
 
-Para desofuscar, tendremos que aplicar la receta en sentido inverso. Por ejemplo. Imagina que creamos una función reveal:
+Para desofuscar, tendremos que aplicar la receta en sentido inverso. Por ejemplo. Imagina que creamos una función `reveal`:
 
 ```
-reveal("R2", "rdpasswo") // devuelve password
-reveal("T2", "c") // devuelve "a' 
+reveal("R2", "rdpasswo") // devuelve "password"
+reveal("T2", "c") // devuelve "a" 
 ```
 
 Si la receta tiene varios pasos, entonces los tenemos que aplicar en orden inverso
 
 ```
-reveal("T1:R2:T1", "dec") // devuelve "abc"
+reveal("T1:R2:T3", "fge") // devuelve "abc", aplicando (invertidas) T3 -> R2 -> T1
 ```
