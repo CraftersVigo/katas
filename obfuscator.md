@@ -75,12 +75,12 @@ Bahev ranwjk. Jko raiko aj hw lqhlkYkj.
 Para desofuscar, tendremos que aplicar la receta en sentido inverso. Por ejemplo. Imagina que creamos una función `reveal`:
 
 ```
-reveal("R2", "rdpasswo") // devuelve "password"
-reveal("T2", "c") // devuelve "a" 
+reveal("R2", "rdpasswo") // devuelve "password", sería algo así como aplicar R-2
+reveal("T2", "c") // devuelve "a", sería como aplicar T-2 
 ```
 
 Si la receta tiene varios pasos, entonces los tenemos que aplicar en orden inverso
 
 ```
-reveal("T1:R2:T3", "fge") // devuelve "abc", aplicando (invertidas) T3 -> R2 -> T1
+reveal("T1:R2:T3", "fge") // devuelve "abc", aplicando (invertidas) T-3 -> R-2 -> T-1
 ```
