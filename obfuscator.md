@@ -70,6 +70,38 @@ Y este el mensaje ofuscado que queremos desvelar
 Bahev ranwjk. Jko raiko aj hw lqhlkYkj.
 ```
 
+Pero antes de resolver el enigma, tendrás que verificar que tu solución es capaz de resolver los siguientes checkpoints.
+
+Por cada checkpoint lograrás un punto. Tienes que demostralo mediante tests. La solución final sólo será válida si tienes los tres puntos de cada checkpoint.
+
+### Checkpoints
+
+Aquí tienes los ejemplos para crear los tests de cada checkpoint.
+
+#### Rotar
+
+| ofuscado | receta | original |
+|----------|--------|----------|
+| dpasswor | R1 | password |
+| rdpasswo | R2 | password |
+| wordpass | R4 | password |
+
+#### Transponer
+
+| ofuscado | receta | original |
+|----------|--------|----------|
+| b | T1 | a |
+| a | T1 | z |
+| c | T4 | y |
+
+#### Combinadas
+
+| ofuscado | receta | original |
+|----------|--------|----------|
+| cb | T1:R1 | ab |
+| fge | T1:R2:T3 | abc |
+
+
 ### Pistas
 
 Para desofuscar, tendremos que aplicar la receta en sentido inverso. Por ejemplo. Imagina que creamos una función `reveal`:
