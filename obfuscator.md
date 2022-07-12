@@ -61,7 +61,7 @@ Nuestro desafío es crear una clase (o función) que pueda revertir el efecto de
 Esta es la receta que se aplicó para ofuscar el mensaje que necesitamos recuperar:
 
 ```
-T22R39
+T22:R39
 ```
 
 Y este el mensaje ofuscado que queremos desvelar
