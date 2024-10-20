@@ -2,4 +2,6 @@
 
 Repositorio de katas para nuestro coding-dojo
 
-[Obfuskator](obfuscator.md)
+* [Obfuskator](obfuscator.md)
+* [Bank OCR](bank-ocr/README.md)
+
