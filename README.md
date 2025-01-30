@@ -6,3 +6,4 @@ Repositorio de katas para nuestro coding-dojo
 * [Bank OCR](bank-ocr/README.md)
 * [Args](args/README.md)
 
+ddd test
