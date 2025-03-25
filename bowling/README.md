@@ -16,4 +16,17 @@ Si no tienes familiaridad con el juego y su sistema de puntuación, aquí van la
 * Si se han tumbado los 10 bolos en el frame (por ejemplo 4 + 6), a eso se le llama spare y se obtiene un bonus que será la puntuación del siguiente lanzamiento, el primero del siguiente frame (10 del frame actual + 3 del siguiente lanzamiento = 13). Esto es, la puntuación final de un spare se calcula después del siguiente lanzamiento y, por así decir, ese lanzamiento se cuenta dos veces (una como bonus y otra normal).
 * Si se han tumbado los 10 bolos en un solo lanzamiento es un strike y en ese caso, el bonus es la puntuación del siguiente frame (por ejemplo, 10 + (3 + 4) = 17).
 * En el caso de que esto se produzca en el último frame, se hacen uno o dos lanzamientos extras según sea necesario.
-* 
+
+## Ideas para resolverla
+
+* Vamos a contar los tantos para una sola jugadora
+* Cada lanzamiento de bola es un roll y se indican cuantos bolos ha derribado en ese roll, hasta un máximo de 10
+* Hay que tener en cuenta que, en algunos casos (spare y strike) se suman puntos del siguiente frame
+
+## Sugerencias
+
+* La clase Bowling podría tener dos métodos: roll y score
+  
+## Más difícil todavía
+
+* Mofifica Bowling Game para permitir controlar los puntos de varias jugadoras
