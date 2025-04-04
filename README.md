@@ -8,4 +8,5 @@ Repositorio de katas para nuestro coding-dojo
 * [String calculator](https://osherove.com/tdd-kata-1)
 * [ScoreKeeper](score-keeper/README.md)
 * [Bowling](bowling/README.md)
+* [Cupcake](cupcake/README.md)
 
